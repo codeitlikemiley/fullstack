@@ -5,7 +5,6 @@ const nodeExternals = require('webpack-node-externals')
 
 // eslint-disable-next-line
 module.exports = {
-    // mode: 'spa', //! UNCOMMENT FOR SPA MODE ONLY
     // eslint-disable-next-line
     srcDir: __dirname,
     env: {
@@ -26,8 +25,8 @@ module.exports = {
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
         ]
-    // script: [ //! Add External Scripts Here
-    // ]
+        // script: [ //! Add External Scripts Here
+        // ]
     },
 
     loading: { color: process.env.LOADING_COLOR || '#B9F6CA' },
@@ -54,7 +53,6 @@ module.exports = {
 
     modules: [
         '@nuxtjs/router',
-        '~/modules/spa',
         '@nuxtjs/apollo',
         [
             'nuxt-env', {
