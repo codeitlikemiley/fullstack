@@ -1,11 +1,7 @@
-# dependencies
-node_modules
-
-# logs
+/node_modules
 npm-debug.log
-
-# Nuxt build
+yarn-error.log
+.env
 .nuxt
-
-# Nuxt generate
-dist
+/dist
+/public/_nuxt

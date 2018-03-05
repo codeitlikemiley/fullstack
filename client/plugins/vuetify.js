@@ -1,15 +1,52 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify'
-import colors from 'vuetify/es5/util/colors'
+
+//! Based Components Needed
+//! Just Import The vuetify components in the component if needed
+//! To Get A Lower Bundle Size
+import {
+    transitions,
+    VApp,
+    VBtn,
+    VCard,
+    VGrid,
+    VToolbar,
+    VProgressCircular,
+    VList,
+    Vuetify,
+    VDialog,
+    VDivider,
+    VSubheader
+} from 'vuetify'
+
+//! Available Directives : ClickOutside, Ripple, Resize, Scroll, Touch
+import { Ripple } from 'vuetify/es5/directives'
 
 Vue.use(Vuetify, {
-  theme: {
-    primary: '#121212', // a color that is not in the material colors palette
-    accent: colors.grey.darken3,
-    secondary: colors.amber.darken3,
-    info: colors.teal.lighten1,
-    warning: colors.amber,
-    error: colors.deepOrange.accent4,
-    success: colors.green.accent3
-  }
+    components: {
+        transitions,
+        VApp,
+        VBtn,
+        VCard,
+        VGrid,
+        VToolbar,
+        VList,
+        Vuetify,
+        VProgressCircular,
+        VDialog,
+        VDivider,
+        VSubheader
+    },
+    directives: {
+        Ripple
+    },
+    //! Define Your Theme Here
+    theme: {
+        primary: '#ef9a9a',
+        secondary: '#607d8b',
+        accent: '#4db6ac',
+        error: '#b71c1c',
+        info: '#bbdefb',
+        success: '#a5d6a7',
+        warning: '#ffc107'
+    }
 })
