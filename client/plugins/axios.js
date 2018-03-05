@@ -1,6 +1,9 @@
 import axios from 'axios'
-import swal from 'sweetalert2'
-
+let swal
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+    // eslint-disable-next-line
+    swal = require('sweetalert2').default;
+}
 // eslint-disable-next-line
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 

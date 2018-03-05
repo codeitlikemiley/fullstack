@@ -145,5 +145,33 @@
     },
     "materialTheme.cache.workbench.settings": {
         "accent": "Pink"
-    } // Expand class with leading namespace separator
+    }, // Expand class with leading namespace separator
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {
+          "tag": "!",
+          "color": "#D50000",
+          "strikethrough": false
+        },
+        {
+          "tag": "?",
+          "color": "#03A9F4",
+          "strikethrough": false
+        },
+        {
+          "tag": "//",
+          "color": "#FFCDD2",
+          "strikethrough": true
+        },
+        {
+          "tag": "todo",
+          "color": "#FFE082",
+          "strikethrough": false
+        },
+        {
+          "tag": "*",
+          "color": "#80CBC4",
+          "strikethrough": false
+        }
+      ]
 }
